@@ -3,17 +3,17 @@ angular.module('solar-system', ['ui.router'])
     $stateProvider
         .state('sun', {
             url:'/sun',
-            templateUrl: './views/sun.html',
+            template: '<sun></sun>',
             component: 'sun'
         })
         .state('mercury', {
             url:'/mercury',
-            templateUrl: './views/mercury.html',
+            template: '<mercury></mercury>',
             component: 'mercury'
         })
         .state('venus',{
             url: '/venus',
-            templateUrl: './views/venus.html',
+            template: '<venus></venus>',
             component: 'venus'
         })
         .state('earth', {

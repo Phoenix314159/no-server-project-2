@@ -4,7 +4,7 @@ angular.module('solar-system').component('earth', {
     controller: function (mainService, $interval) {
         let that = this;
         that.show = false;
-        that.dude = 'yo man';
+
         that.text = "";
         that.data = mainService.earthData;
         that.displayText = function () {
