@@ -1,21 +1,22 @@
 angular.module('solar-system').component('earth', {
     templateUrl: './views/earth.html',
     bindToController: {},
-    controller: function (mainService, $interval) {
+    controller: function (mainService, $interval, $timeout) {
         let that = this;
         that.show = false;
-
         that.text = "";
-        that.data = mainService.earthData;
         that.displayText = function () {
             that.show = true;
-            that.i = 0;
-            that.words = 'The radius of the earth is 3959 miles Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
-            $interval(function () {
-                that.text += that.words[that.i]
-                that.i++;
+            that.index = 0;
+            that.earthText = mainService.earthText;
+            $interval(function () { //464
+                $timeout(function () {
+                    that.text += that.earthText[that.index]
+                    that.index++;
+                },1000)
 
-            }, 100, that.words.length);
+                console.log(that.index);
+            }, 25, that.earthText.length);
 
             //        $timeout(function () {
             //           that.text = 'r';

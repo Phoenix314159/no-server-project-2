@@ -23,27 +23,27 @@ angular.module('solar-system', ['ui.router'])
         })
         .state('mars', {
             url: '/mars',
-            templateUrl: './views/mars.html',
+            template: '<mars></mars>',
             component: 'mars'
         })
         .state('jupiter', {
             url: '/jupiter',
-            templateUrl: './views/jupiter.html',
+            template: '<jupiter></jupiter>',
             component: 'jupiter'
         })
         .state('saturn', {
             url: '/saturn',
-            templateUrl: './views/saturn.html',
+            template: '<saturn></saturn>',
             component: 'saturn'
         })
         .state('uranus', {
             url: '/uranus',
-            templateUrl: './views/uranus.html',
+            template: '<uranus></uranus>',
             component: 'uranus'
         })
         .state('neptune',{
             url:'/neptune',
-            templateUrl: './views/neptune.html',
+            template: '<neptune></neptune>',
             component: 'neptune'
         });
     $urlRouterProvider.otherwise('/');

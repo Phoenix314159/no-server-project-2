@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="./styles/jupiterStyle.css">
 <div id="main">
 <h1>Jupiter</h1>
-<img class="animated fadeIn" class="img-rounded" src="http://nineplanets.org/images/jupiter.jpg"/>
+<img class="animated rollIn" class="img-rounded" src="http://nineplanets.org/images/jupiter.jpg"/>
 <div>
-	<button class="btn btn-primary" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.show = true">Show Information</button></div>
-<div ng-show="$ctrl.show" class="box">
-
+	<button class="btn btn-warning" ng-hide="$ctrl.show"
+	        ng-click="$ctrl.displayText()">Show Information</button></div>
+<div ng-show="$ctrl.show" class="box text animated fadeIn">
+{{$ctrl.text}}
 
 </div>
 </div>

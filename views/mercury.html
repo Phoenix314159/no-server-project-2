@@ -2,13 +2,12 @@
 <div id="main">
 <h1>Mercury</h1>
 
-		<img class="animated fadeIn" src="http://nineplanets.org/images/mercury.jpg"/>
+		<img class="animated fadeIn" ng-click="$ctrl.displayText(); $ctrl.show = true" src="http://nineplanets.org/images/mercury.jpg"/>
 
 <div>
-	<button class="btn btn-primary" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.show = true">Show Information</button></div>
-<div class="animated fade-in" ng-show="$ctrl.show" class="box">
-
+	<button class="btn btn-blue-grey" ng-hide="$ctrl.show">Click On Image</button></div>
+<div  ng-show="$ctrl.show" class="box text animated fadeIn">
+{{$ctrl.text}}
 
 </div>
 </div>

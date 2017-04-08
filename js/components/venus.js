@@ -2,7 +2,7 @@ angular.module('solar-system').component('venus', {
 
     templateUrl: './views/venus.html',
 
-    controller : function($interval, mainService){
+    controller : function($interval, mainService, $timeout){
         let that = this;
         that.show = false;
         that.text = "";
@@ -10,11 +10,14 @@ angular.module('solar-system').component('venus', {
             that.show = true;
             that.index = 0;
             that.venusText = mainService.venusText;
-            $interval(function () {
-                that.text += that.venusText[that.index]
-                that.index++;
+            $interval(function () { //505
+                $timeout(function () {
+                    that.text += that.venusText[that.index]
+                    that.index++;
+                },500)
 
-            }, 100, that.venusText.length);
+                console.log(that.index);
+            }, 30, that.venusText.length);
 
         };
     }

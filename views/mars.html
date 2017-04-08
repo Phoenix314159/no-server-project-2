@@ -3,8 +3,26 @@
 <h1>Mars</h1>
 <img class="animated fadeIn" src="http://nineplanets.org/images/mars.jpg"/>
 <div>
-	<button class="btn btn-primary" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.show = true">Show Information</button></div>
-<div ng-show="$ctrl.show" class="box">
+	<button class="btn btn-danger" ng-hide="$ctrl.show"
+	        ng-click="$ctrl.displayText()">Show Information</button></div>
+<div ng-show="$ctrl.show" class="box text animated fadeIn">
+	{{$ctrl.text}}
 </div>
+</div>
+<div class="preloader-wrapper big active">
+	<div class="preloader-wrapper big active">
+		<div class="preloader-wrapper big active">
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue-only">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div><div class="gap-patch">
+					<div class="circle"></div>
+				</div><div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

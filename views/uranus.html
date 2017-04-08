@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="../styles/uranusStyle.css">
 <div id="main">
-<h1>Uranus</h1>
-
-<img class="animated fadeIn" src="http://nineplanets.org/images/uranus.jpg"/>
-<div>
-	<button class="btn btn-primary" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.show = true">Show Information</button></div>
-<div ng-show="$ctrl.show" class="box">
-
-
-</div>
+    <h1>Uranus</h1>
+    <img class="animated fadeIn" src="http://nineplanets.org/images/uranus.jpg"/>
+    <div>
+        <button class="btn btn-default" ng-hide="$ctrl.show"
+                ng-click="$ctrl.displayText()">Show Information
+        </button>
+    </div>
+    <div ng-show="$ctrl.show" class="box text animated lightSpeedIn">
+        {{$ctrl.text}}
+    </div>
 </div>

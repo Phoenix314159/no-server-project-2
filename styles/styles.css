@@ -1,6 +1,12 @@
-/*body{*/
-    /*background-image: url("http://www.terrastro.com/wp-content/gallery/deep-space-hr/ngc346.jpg");*/
-/*}*/
+body{
+    /*background-image: url("../image/Space Images in high resolution for free High Definition Backgrounds ....jpg");*/
+
+
+}
+astronaut{
+    height:50%;
+    width:50%;
+}
 .f-size button a {
     font-size:30px;
     color: inherit;
@@ -13,8 +19,8 @@
     transform: scale(1.3);
 }
 .f-size{
-    position: relative;
-    right:35%;
-    top:10%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 20%;
     margin-top: 2%;
 }
