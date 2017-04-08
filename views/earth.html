@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="../styles/earthStyle.css">
+<div id="main">
+
+	<h1>Earth </h1>
+	<div><img  class="animated fadeIn" src="http://nineplanets.org/images/earth.jpg"/></div>
+
+	<div>
+		<button class="btn btn-primary" ng-hide="$ctrl.show"
+		        ng-click="$ctrl.displayText()">Show Information</button></div>
+	<div ng-show="$ctrl.show" class="box text" typewrite="radius">
+
+	     {{$ctrl.text}}
+		{{$ctrl.test}}
+
+	</div>
+</div>

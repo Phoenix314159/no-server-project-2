@@ -1,0 +1,28 @@
+.box{
+    width: 55vh;
+    height: 20vw;
+    background-color: #0f0f0f;
+    position: relative;
+    right:7%;
+    margin-top:2%;
+
+}
+#main{
+    margin-left: 35%;
+}
+button{
+    position: absolute;
+    top:50%;
+    left:40.2%;
+}
+img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.text{
+    color:white;
+    padding:3%;
+    font-size: 25px;
+}
+
