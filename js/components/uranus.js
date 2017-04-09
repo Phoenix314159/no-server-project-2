@@ -15,8 +15,6 @@ angular.module('solar-system').component('uranus', {
                     that.text += that.uranusText[that.index]
                     that.index++;
                 },470)
-
-                console.log(that.index);
             }, 20, that.uranusText.length);
 
         }

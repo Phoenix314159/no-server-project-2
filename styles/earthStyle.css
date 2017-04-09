@@ -4,7 +4,7 @@
      background-color: #0f0f0f;
      position: relative;
      right:7%;
-     margin-top:2%;
+
 
  }
 .box2{
@@ -18,21 +18,15 @@
 #main{
     margin-left: 35%;
 }
-/*#main h1{*/
-    /*position: absolute;*/
-    /*top:10%;*/
-    /*color:blue;*/
-/*}*/
+#main h1{
+   color: #00b0ff;
+}
 button{
     position: absolute;
     top:50%;
     left:40.2%;
 }
-img:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
+
 .text{
     color:white;
     padding:2%;

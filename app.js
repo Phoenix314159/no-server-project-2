@@ -45,6 +45,10 @@ angular.module('solar-system', ['ui.router'])
             url:'/neptune',
             template: '<neptune></neptune>',
             component: 'neptune'
+        })
+        .state('solar-system',{
+            url: '/solar-system',
+            templateUrl: './views/solar-system.html'
         });
     $urlRouterProvider.otherwise('/');
 

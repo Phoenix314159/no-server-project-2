@@ -1,28 +1,13 @@
 <link rel="stylesheet" href="../styles/marsStyle.css">
 <div id="main">
 <h1>Mars</h1>
-<img class="animated fadeIn" src="http://nineplanets.org/images/mars.jpg"/>
-<div>
-	<button class="btn btn-danger" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.displayText()">Show Information</button></div>
-<div ng-show="$ctrl.show" class="box text animated fadeIn">
+
+<img class="animated bounceInRight img-responsive"
+	 ng-click="$ctrl.displayText()" src="http://nineplanets.org/images/mars.jpg"/>
+
+
+<div ng-show="$ctrl.show" class="box text animated zoomInRight">
 	{{$ctrl.text}}
 </div>
 </div>
-<div class="preloader-wrapper big active">
-	<div class="preloader-wrapper big active">
-		<div class="preloader-wrapper big active">
-			<div class="preloader-wrapper big active">
-				<div class="spinner-layer spinner-blue-only">
-					<div class="circle-clipper left">
-						<div class="circle"></div>
-					</div><div class="gap-patch">
-					<div class="circle"></div>
-				</div><div class="circle-clipper right">
-					<div class="circle"></div>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<mars2 class="box2 text2  animated zoomIn" ng-show="$ctrl.show"></mars2>

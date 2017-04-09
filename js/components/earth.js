@@ -1,6 +1,6 @@
 angular.module('solar-system').component('earth', {
     templateUrl: './views/earth.html',
-    bindToController: {},
+
     controller: function (mainService, $interval, $timeout) {
         let that = this;
         that.show = false;

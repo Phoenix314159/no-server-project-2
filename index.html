@@ -5,40 +5,39 @@
 		<meta name="viewport"
 		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Document</title>
+		<title>The Solar System</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css"/>
 		<link rel="stylesheet" href="styles/styles.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/mdb.min.css" rel="stylesheet">
+		<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+		<!--<link href="css/mdb.min.css" rel="stylesheet">-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
-
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	</head>
-	<body>
-		<!--<div class="f-size">-->
-		<div class="btn-group" role="group" >
-
-			<button type="button" class="btn btn-default"><a ui-sref="sun">The Sun</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="mercury">Mercury</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="venus">Venus</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="earth">Earth</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="mars">Mars</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="jupiter">Jupiter</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="saturn">Saturn</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="uranus">Uranus</a></button>
-			<button type="button" class="btn btn-default"><a ui-sref="neptune">Neptune</a></button>
-
-		</div>
-
-		<!--</div>-->
-		<ui-view></ui-view>
-		<astronaut></astronaut>
+	<body ng-controller="mainCtrl">
+	<div class="btn-group" role="group" ng-show="show2">
+            <button ng-class="{active: isActive('/sun')}" type="button" class="btn btn-default"><a ui-sref="sun"><span>Sun</span></a></button>
+			<button ng-class="{active: isActive('/mercury')}" type="button" class="btn btn-default"><a ui-sref="mercury"><span>Mercury</span></span></a></button>
+			<button ng-class="{active: isActive('/venus')}" type="button" class="btn btn-default"><a ui-sref="venus"><span>Venus</span></a></button>
+			<button ng-class="{active: isActive('/earth')}" type="button" class="btn btn-default"><a ui-sref="earth"><span>Earth</span></a></button>
+			<button ng-class="{active: isActive('/mars')}" type="button" class="btn btn-default"><a ui-sref="mars"><span>Mars</span></a></button>
+			<button ng-class="{active: isActive('/jupiter')}" type="button" class="btn btn-default"><a ui-sref="jupiter"><span>Jupiter</span></a></button>
+			<button ng-class="{active: isActive('/saturn')}" type="button" class="btn btn-default"><a ui-sref="saturn"><span>Saturn</span></a></button>
+			<button ng-class="{active: isActive('/uranus')}" type="button" class="btn btn-default"><a ui-sref="uranus"><span>Uranus</span></a></button>
+			<button ng-class="{active: isActive('/neptune')}" type="button" class="btn btn-default"><a ui-sref="neptune"><span>Neptune</span></a></button>
+    </div>
+        <ui-view></ui-view>
+		<astronaut ng-click="show2=!show2"></astronaut>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-
-		<script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 		<script src="js/components/sun.js"></script>
 		<script src="js/components/mercury.js"></script>
 		<script src="js/components/venus.js"></script>
@@ -47,13 +46,20 @@
 		<script src="js/components/jupiter.js"></script>
 		<script src="js/components/saturn.js"></script>
 		<script src="js/components/uranus.js"></script>
+		<script src="js/controller/mainCtrl.js"></script>
 		<script src="js/components/neptune.js"></script>
 		<script src="js/services/mainService.js"></script>
 		<script src="js/components/earth2.js"></script>
+		<script src="js/components/mercury2.js"></script>
 		<script src="js/components/astronaut.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
-
-
-	</body>
-
+		<script src="js/components/venus2.js"></script>
+		<script src="js/components/mars2.js"></script>
+		<script src="js/components/jupiter2.js"></script>
+		<script src="js/components/uranus2.js"></script>
+		<script src="js/components/neptune2.js"></script>
+		<script src="js/controller/mainCtrl.js"></script>
+		<script src="js/components/text.js"></script>
+		<script src="js/components/saturn2.js"></script>
+	    <script src="js/components/textGray.js"></script>
+    </body>
 </html>

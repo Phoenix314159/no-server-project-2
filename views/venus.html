@@ -1,13 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="../styles/venusStyle.css">
 <div id="main">
-<h1>Venus</h1>
-<img class="animated fadeIn" src="http://nineplanets.org/images/venus.jpg"/>
-<div>
-	<button class="btn btn-yellow" ng-hide="$ctrl.show"
-	        ng-click="$ctrl.displayText()">Show Information</button></div>
-<div ng-show="$ctrl.show" class="box text animated fadeIn">
+    <h1>Venus</h1>
+    <img ng-click="$ctrl.displayText()" class="animated bounceInRight img-responsive" src="http://nineplanets.org/images/venus.jpg"/>
 
-	{{$ctrl.text}}
 
+    <div ng-show="$ctrl.show" class="box text animated fadeIn">
+
+        {{$ctrl.text}}
+
+    </div>
 </div>
-</div>
+<venus2 class="box2 text2  animated slideInUp" ng-show="$ctrl.show"></venus2>

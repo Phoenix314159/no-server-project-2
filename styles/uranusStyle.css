@@ -7,21 +7,34 @@
     margin-top:2%;
 
 }
+.box2{
+    width: 20vw;
+    height: 83vh;
+    background-color: #0f0f0f;
+    position: absolute;
+    left:6%;
+    top:10%;
+}
 #main{
     margin-left: 35%;
+}
+#main h1{
+    color: #fdfcfc;
 }
 button{
     position: absolute;
     top:50%;
     left:40.2%;
 }
-img:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
+
 .text{
-    color:white;
+     color:white;
+     padding:2%;
+     font-size: 25px;
+ }
+.text2{
+    color: deeppink;
     padding:2%;
-    font-size: 25px;
+    font-size: 21px;
+    font-family: Courier;
 }

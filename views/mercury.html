@@ -1,13 +1,14 @@
 <link rel="stylesheet" href="../styles/mercuryStyle.css">
-<div id="main">
 <h1>Mercury</h1>
-
-		<img class="animated fadeIn" ng-click="$ctrl.displayText(); $ctrl.show = true" src="http://nineplanets.org/images/mercury.jpg"/>
-
-<div>
-	<button class="btn btn-blue-grey" ng-hide="$ctrl.show">Click On Image</button></div>
-<div  ng-show="$ctrl.show" class="box text animated fadeIn">
-{{$ctrl.text}}
-
+<div id="main">
+    <img class="animated bounceInLeft img-responsive" ng-click="$ctrl.displayText();
+		$ctrl.show = true" src="http://nineplanets.org/images/mercury.jpg"/>
+    <text-gray>
+        <div ng-show="$ctrl.show" class="box text animated zoomIn">
+            {{$ctrl.text}}
+        </div>
+    </text-gray>
 </div>
-</div>
+<text-gray>
+    <mercury2 class="box2 text2  animated slideInUp" ng-show="$ctrl.show"></mercury2>
+</text-gray>

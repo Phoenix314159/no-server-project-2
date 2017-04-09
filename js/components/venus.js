@@ -16,7 +16,6 @@ angular.module('solar-system').component('venus', {
                     that.index++;
                 },500)
 
-                console.log(that.index);
             }, 30, that.venusText.length);
 
         };

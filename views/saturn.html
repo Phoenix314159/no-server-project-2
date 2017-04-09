@@ -1,14 +1,11 @@
 <link rel="stylesheet" href="../styles/saturnStyle.css">
 <div id="main">
     <h1>Saturn</h1>
-    <img class="animated fadeIn"
-         src="http://kids.nationalgeographic.com/content/dam/kids/photos/articles/Space/Q-Z/saturn.jpg"/>
-    <div>
-        <button class="btn btn-lime" ng-hide="$ctrl.show"
-                ng-click="$ctrl.displayText()">Show Information
-        </button>
-    </div>
-    <div ng-show="$ctrl.show" class="box text animated fadeIn">
+    <img class="animated pulse img-responsive" ng-click="$ctrl.displayText()"
+         src="https://i.imgsafe.org/d014ad8ab1.png"/>
+
+    <div ng-show="$ctrl.show" class="box text animated zoomInUp">
         {{$ctrl.text}}
     </div>
 </div>
+<saturn2 class="box2 text2  animated flipInY" ng-show="$ctrl.show"></saturn2>

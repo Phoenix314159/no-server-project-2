@@ -1,26 +1,58 @@
-body{
-    /*background-image: url("../image/Space Images in high resolution for free High Definition Backgrounds ....jpg");*/
+body {
+    background-image: url("../image/Space Images in high resolution for free High Definition Backgrounds ....jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-name: backswitch;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 
+}
+@keyframes backswitch {
+    0% {
+        background-color: #1e232f;
+    }
+    20% {
+        background-color: #2e2e2e;
+    }
+    40% {
+        background-color: #F1F1F1;
+    }
+    80% {
+        background-color: gainsboro;
+    }
+    100% {
+        background-color: slategrey;
+    }
 
 }
-astronaut{
-    height:50%;
-    width:50%;
+
+/*body{*/
+/*background-color: white;*/
+/*}*/
+/**{*/
+/*border: 1px black dotted;*/
+/*}*/
+.active {
+    color: #fdfcfc;
+    font-size: 22px;
+    text-decoration: underline;
 }
-.f-size button a {
-    font-size:30px;
-    color: inherit;
-    text-decoration: none;
-    color: #7d0000;
-}
-.f-size button:hover{
+
+.active:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
-.f-size{
-    text-align: center;
-    margin-left: 0;
-    margin-right: 20%;
-    margin-top: 2%;
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-right: 48%;
+    margin-left: 38%;
+}
+
+.btn-group span {
+    font-size: 25px;
 }

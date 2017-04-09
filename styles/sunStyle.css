@@ -1,9 +1,9 @@
 .box{
-    width: 37vh;
+    width: 55vh;
     height: 20vw;
     background-color: #0f0f0f;
     position: relative;
-    right:.5%;
+    right:7%;
     margin-top:2%;
 
 }
@@ -15,8 +15,17 @@ button{
     top:50%;
     left:40.2%;
 }
-img:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+
+.text{
+    color:white;
+    padding:2%;
+    font-size: 25px;
+}
+video{
+    position: absolute;
+    top:10%;
+}
+h1{
+    color:red;
+    margin-left: 35%;
 }
