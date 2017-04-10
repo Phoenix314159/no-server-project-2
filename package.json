@@ -20,6 +20,7 @@
     "gulp-scss": "^1.4.0",
     "gulp-sourcemaps": "^2.5.1",
     "gulp-uglify": "^2.1.2",
-    "planet-facts": "^0.1.0"
+    "planet-facts": "^0.1.0",
+    "uglify": "^0.1.5"
   }
 }

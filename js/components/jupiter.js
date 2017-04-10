@@ -23,5 +23,7 @@ angular.module('solar-system').component('jupiter', {
             }, 26, that.jupiterText.length);
 
         }
+
     }
+
 })
